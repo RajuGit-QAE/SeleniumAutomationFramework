@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RajaSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="commontests.TestListerners"/>
+  </listeners>
+  <test thread-count="5" name="RajaTest(failed)">
+    <classes>
+      <class name="alltests.ModifiedTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="sampleTestEnd"/>
+          <include name="shoppingTest"/>
+          <include name="launchTest"/>
+          <include name="sampleTest"/>
+        </methods>
+      </class> <!-- alltests.ModifiedTest -->
+    </classes>
+  </test> <!-- RajaTest(failed) -->
+</suite> <!-- Failed suite [RajaSuite] -->
